@@ -1,0 +1,216 @@
+            /* Reset */
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #E1F0DA;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Alinhamento do ícone e do texto */
+            .esquerda {
+                display: flex;
+                align-items: center;
+                gap: 10px; /* Espaço entre o ícone e o texto */
+            }
+
+            .icone {
+                width: 20px; /* Ajuste o tamanho do ícone */
+                height: auto;
+            }
+
+            /* Texto da direita */
+            .direita {
+                font-weight: 600;
+            }
+
+            /* Cores e alinhamento do cabeçalho superior */
+            .cabecalho {
+                display: flex;
+                justify-content: space-center;
+                align-items: center;
+                background-color: #FEBFBF;
+                padding: 10px 20px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+            }
+
+            /* Estilizando a segunda parte do cabeçalho */
+            .topo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+            }
+
+            /* Ajuste do título */
+            h1 {
+                font-family: 'DM Serif Display', serif;
+                color: #7CA067;
+                font-size: 50px;
+                flex-grow:1 ;
+                text-align: center;
+            }
+
+            /* Ícones */
+            .icones {
+                display: flex;
+                align-items: center;
+                gap: 20px; /* Espaço entre os ícones */
+            }
+
+            .link-icone {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                gap: 5px;
+            }
+
+            .link-icone img {
+                width: 24px;
+                height: auto;
+            }
+
+            /* Imagem de capa preenchendo a largura total */
+            .banner{
+                width: 100%;
+                max-width: 100vw;
+                height: auto;
+                display: block;
+                
+            }
+
+            .informacoes {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 20px;
+                background-color: #ffffff;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            /* Estilização dos itens da seção */
+            .info-item {
+                display: flex;
+                align-items: center;
+                gap: 10px; /* Espaçamento entre o ícone e o texto */
+            }
+
+            /* Ajuste de tamanho dos ícones */
+            .icone_info{
+                width: 30px;
+            }
+
+            .menunav{
+                text-align: center;
+
+            }
+            .menunav a{
+                text-decoration: none;
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+                padding: 14px 16px;
+                color: black;
+            }
+
+            footer{
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                padding: 20px;
+
+            }
+
+            .info-envio {
+                display: flex;
+                align-items: center;
+                gap: 8px; /* Ajuste o espaçamento entre o ícone e o texto */
+            }
+            
+            .favoritos {
+                text-align: center;
+                margin: 50px 0;
+                font-family: 'Poppins', sans-serif;
+
+            }
+            
+        
+            /* Estilização da seção de favoritos */
+
+            div.gallery {
+                border: 1px solid #ccc;
+              }
+              
+              div.gallery:hover {
+                border: 1px solid #777;
+              }
+              
+              div.gallery img {
+                width: 100%;
+                height: auto;
+              }
+              
+              div.desc {
+                padding: 15px;
+                text-align: center;
+              }
+            
+              
+              .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+              }
+              
+              @media only screen and (max-width: 700px) {
+                .responsive {
+                  width: 49.99999%;
+                  margin: 6px 0;
+                }
+              }
+              
+              @media only screen and (max-width: 500px) {
+                .responsive {
+                  width: 100%;
+                }
+              }
+              
+              .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+              .gallery {
+                border: 1px solid #ccc;
+                display: inline-block;
+                width: 20%;
+                margin: 0 10px; /* Adiciona 10px de margem à esquerda e à direita */
+                vertical-align: top;
+              }
+
+                .valor_item{
+                    text-align: center;
+                    font-family: 'Poppins', sans-serif;
+
+                }
+
+                button{
+                    justify-content: center;
+                    font-family: 'Poppins', sans-serif;
+
+                }
+                .des{
+                    font-family: 'Poppins', sans-serif;
+
+                }
+                div.gallery button {
+                    display: block;
+                    margin: 10px auto; /* Adicionei 10px de margem em cima e embaixo para espaçamento */
+                    padding: 8px 16px; /* Adicionei um pouco de padding para melhorar a aparência */
+                }
