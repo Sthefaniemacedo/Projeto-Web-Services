@@ -1,0 +1,143 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E1F0DA;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FEBFBF;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.info-envio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.frete-gratis {
+    text-align: right;
+}
+
+.icone {
+    width: 16px;
+    height: auto;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.topo h1 {
+    font-family: 'DM Serif Display', serif;
+    color: #7CA067;
+    font-size: 40px;
+    text-align: center;
+    flex: 1;
+}
+
+.link-icone {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    gap: 5px;
+}
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icones img {
+    width: 20px;
+    height: auto;
+}
+
+.menunav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 10px 0;
+}
+
+.menunav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.form-section {
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    max-width: 900px;
+}
+
+.login-section, .signup-section {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7CA067;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+footer{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conta.css">
+
+    <!-- Importação da fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>De Brubs</title>
+</head>
+<body>
+   
+<header class="cabecalho">
+    <div class="info-envio">
+        <img src="imagens/icon_localizacao.png" alt="Ícone de localização" class="icone">
+        <span>Enviamos para todo o Brasil</span>
+    </div>
+    <div class="frete-gratis">
+        <span>Frete Grátis a partir de R$100 reais.</span>
+    </div>
+</header>
+
+<header class="topo">
+    <h1>De Brubs - Moda Feminina</h1>
+    <div class="icones">
+        <a href="conta.html" class="link-icone">
+            <img src="imagens/icon_conta.png" alt="Ícone de conta">
+            <span>Minha Conta</span>
+        </a>
+        <a href="#" class="icone-carrinho">
+            <img src="imagens/icon_carrinho.png" alt="Ícone de carrinho">
+        </a>
+    </div>
+</header>
+
+<div class="menunav">
+    <a href="index.html">HOME</a>
+    <a href="blusas.html">BLUSAS</a>
+</div>
+
+<div class="container">
+    <div class="form-section">
+        <!-- Formulário de Login -->
+        <form class="login-section">
+            <h2>Já sou cliente</h2>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            
+            <label for="senha">Senha</label>
+            <div class="password-container">
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                <button type="button" class="toggle-password" onclick="togglePassword('senha')">👁</button>
+            </div>
+            
+            <button type="submit">Entrar</button>
+        </form>
+        
+        <!-- Formulário de Cadastro -->
+        <form class="signup-section">
+            <h2>Quero criar uma conta</h2>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+            
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+            
+            <label for="email-signup">E-mail</label>
+            <input type="email" id="email-signup" name="email-signup" placeholder="Digite seu e-mail" required>
+            
+            <label for="senha-signup">Senha</label>
+            <div class="password-container">
+                <input type="password" id="senha-signup" name="senha-signup" placeholder="Crie uma senha" required>
+                <button type="button" class="toggle-password" onclick="togglePassword('senha-signup')">👁</button>
+            </div>
+            
+            <label for="confirmar-senha">Confirmar Senha</label>
+            <div class="password-container">
+                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+                <button type="button" class="toggle-password" onclick="togglePassword('confirmar-senha')">👁</button>
+            </div>
+            
+            <button type="submit">Criar Conta</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 DeBrubs.com.br. Todos os direitos reservados.
+</footer>
+
+<script>
+    function togglePassword(id) {
+        let input = document.getElementById(id);
+        if (input.type === "password") {
+            input.type = "text";
+        } else {
+            input.type = "password";
+        }
+    }
+</script>
+
+</body>
+</html>
