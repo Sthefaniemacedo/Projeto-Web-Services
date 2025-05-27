@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="CSS/style_pagamento.css" />
+</head>
+<body id="pagamento">
+
+    <!-- Cabeçalho principal -->
+    <header class="cabecalho">
+        <div class="info-envio">
+            <img src="imagens/icon_localizacao.png" alt="Ícone de localização" class="icone" />
+            <span>Enviamos para todo o Brasil</span>
+        </div>
+        <div class="frete-gratis">
+            <span>Frete Grátis a partir de R$100 reais.</span>
+        </div>
+    </header>
+
+    <header class="topo">
+        <h1>De Brubs - Moda Feminina</h1>
+        <div class="icones">
+            <a href="conta.html" class="link-icone">
+                <img src="imagens/icon_conta.png" alt="Ícone de conta" />
+                <span>Minha Conta</span>
+            </a>
+        </div>
+        <div id="carrinho">
+            <a href="carrinho.html" class="link-icone">
+                <img src="imagens/icon_carrinho.png" alt="Ícone de carrinho" />
+            </a>
+        </div>
+    </header>
+
+    <!-- Menu de navegação -->
+    <div class="menunav">
+        <a href="index.html" class="active">HOME</a>
+        <a href="blusas.html" class="active">BLUSAS</a>
+    </div>
+
+
+    <main class="container-pagamento">
+        <section class="formulario-endereco">
+            <h2>Endereço de Entrega</h2>
+            <form id="form-endereco">
+                <input type="text" placeholder="Nome" required />
+                <input type="text" placeholder="Sobrenome" required />
+                <input type="text" placeholder="Endereço" required />
+                <input type="text" placeholder="CEP" required />
+                <input type="text" placeholder="Cidade" required />
+                <input type="text" placeholder="Estado" required />
+                <input type="text" placeholder="Complemento" />
+            </form>
+        </section>
+
+        <section class="resumo-compra">
+            <h2>Resumo da Compra</h2>
+            <div id="resumo-itens"></div>
+            <p>Frete: <strong>R$ 10,00</strong></p>
+            <input type="text" placeholder="Cupom de desconto" id="campo-cupom" />
+            <p id="total-final">Total: R$ 0,00</p>
+        </section>
+            <button id="btn-forma-pagamento" class="btn-pagamento">Forma de Pagamento</button>
+
+    </main>
+
+    <script src="JS/pagamento.js"></script>
+</body>
+</html>

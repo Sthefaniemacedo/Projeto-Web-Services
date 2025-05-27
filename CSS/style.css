@@ -11,16 +11,22 @@
                 padding: 0;
             }
 
-            .info-envio {
+            /* Alinhamento do ícone e do texto */
+            .esquerda {
                 display: flex;
                 align-items: center;
-                gap: 8px; /* Ajuste o espaçamento entre o ícone e o texto */
+                gap: 10px; /* Espaço entre o ícone e o texto */
             }
+
             .icone {
                 width: 20px; /* Ajuste o tamanho do ícone */
                 height: auto;
             }
 
+            /* Texto da direita */
+            .direita {
+                font-weight: 600;
+            }
 
             /* Cores e alinhamento do cabeçalho superior */
             .cabecalho {
@@ -71,6 +77,34 @@
                 height: auto;
             }
 
+            .banner{
+                width: 100%;
+                max-width: 100vw;
+                height: auto;
+                display: block;
+                
+            }
+
+            .informacoes {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 20px;
+                background-color: #ffffff;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            /* Estilização dos itens da seção */
+            .info-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            /* Ajuste de tamanho dos ícones */
+            .icone_info{
+                width: 30px;
+            }
 
             .menunav {
                 display: flex;
@@ -96,9 +130,29 @@
 
             }
 
+            .info-envio {
+                display: flex;
+                align-items: center;
+                gap: 8px; /* Ajuste o espaçamento entre o ícone e o texto */
+            }
+            
+            .favoritos {
+                text-align: center;
+                margin: 50px 0;
+                font-family: 'Poppins', sans-serif;
+
+            }
+
+            .favoritos-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            
             
         
-            /* Estilização da galeria de blusas */
+            /* Estilização da seção de favoritos */
 
             div.gallery {
                 border: 1px solid #ccc;
@@ -116,9 +170,7 @@
               div.desc {
                 padding: 15px;
                 text-align: center;
-                
               }
-    
             
               
               .responsive {
@@ -188,4 +240,3 @@
                     padding: 8px 16px; /* Adicionei um pouco de padding para melhorar a aparência */
                 }
 
-              

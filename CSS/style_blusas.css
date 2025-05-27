@@ -6,32 +6,26 @@
             }
 
             body {
-                background-color: #E1F0DA;
+                background-color: white;
                 margin: 0;
                 padding: 0;
             }
 
-            /* Alinhamento do ícone e do texto */
-            .esquerda {
+            .info-envio {
                 display: flex;
                 align-items: center;
-                gap: 10px; /* Espaço entre o ícone e o texto */
+                gap: 8px; /* Ajuste o espaçamento entre o ícone e o texto */
             }
-
             .icone {
                 width: 20px; /* Ajuste o tamanho do ícone */
                 height: auto;
             }
 
-            /* Texto da direita */
-            .direita {
-                font-weight: 600;
-            }
 
             /* Cores e alinhamento do cabeçalho superior */
             .cabecalho {
                 display: flex;
-                justify-content: space-center;
+                justify-content: space-between;
                 align-items: center;
                 background-color: #FEBFBF;
                 padding: 10px 20px;
@@ -39,7 +33,6 @@
                 font-size: 14px;
             }
 
-            /* Estilizando a segunda parte do cabeçalho */
             .topo {
                 display: flex;
                 justify-content: space-between;
@@ -78,46 +71,22 @@
                 height: auto;
             }
 
-            /* Imagem de capa preenchendo a largura total */
-            .banner{
-                width: 100%;
-                max-width: 100vw;
-                height: auto;
-                display: block;
-                
-            }
 
-            .informacoes {
+            .menunav {
                 display: flex;
-                justify-content: space-around;
-                align-items: center;
-                padding: 20px;
-                background-color: #ffffff;
-                font-family: 'Poppins', sans-serif;
+                justify-content: center;
+                gap: 20px;
+                background-color: white;
+                padding: 10px 0;
             }
-
-            /* Estilização dos itens da seção */
-            .info-item {
-                display: flex;
-                align-items: center;
-                gap: 10px; /* Espaçamento entre o ícone e o texto */
-            }
-
-            /* Ajuste de tamanho dos ícones */
-            .icone_info{
-                width: 30px;
-            }
-
-            .menunav{
-                text-align: center;
-
-            }
-            .menunav a{
+            
+            .menunav a {
                 text-decoration: none;
-                font-size: 20px;
+                font-size: 18px;
                 font-family: 'Poppins', sans-serif;
-                padding: 14px 16px;
                 color: black;
+                font-weight: 600;
+                padding: 10px;
             }
 
             footer{
@@ -127,21 +96,9 @@
 
             }
 
-            .info-envio {
-                display: flex;
-                align-items: center;
-                gap: 8px; /* Ajuste o espaçamento entre o ícone e o texto */
-            }
-            
-            .favoritos {
-                text-align: center;
-                margin: 50px 0;
-                font-family: 'Poppins', sans-serif;
-
-            }
             
         
-            /* Estilização da seção de favoritos */
+            /* Estilização da galeria de blusas */
 
             div.gallery {
                 border: 1px solid #ccc;
@@ -159,7 +116,9 @@
               div.desc {
                 padding: 15px;
                 text-align: center;
+                
               }
+    
             
               
               .responsive {
@@ -194,6 +153,19 @@
                 vertical-align: top;
               }
 
+              .gallery button {
+                background-color: #7CA067;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                cursor: pointer;
+                transition: 0.3s;
+                border-radius: 5px;
+              }
+
+              .gallery button:hover {
+                background-color: #5a8048;
+            }
                 .valor_item{
                     text-align: center;
                     font-family: 'Poppins', sans-serif;
@@ -214,3 +186,104 @@
                     margin: 10px auto; /* Adicionei 10px de margem em cima e embaixo para espaçamento */
                     padding: 8px 16px; /* Adicionei um pouco de padding para melhorar a aparência */
                 }
+
+/* Estilo para o container do carrinho */
+#carrinho-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Estilo para cada item do carrinho */
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.item-carrinho:hover {
+    transform: scale(1.02);
+}
+
+/* Estilo para a imagem do produto */
+.imagem-produto {
+    width: 80px;  
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+/* Estilo para a descrição do produto */
+.descricao-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Estilo para o nome do produto */
+.descricao-produto h3 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Estilo para o preço e total */
+.descricao-produto p {
+    margin: 0;
+    color: #333;
+}
+
+/* Estilo para o total no final do carrinho */
+#total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* Estilos para os botões */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.acoes-carrinho {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-finalizar, .btn-limpar {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-finalizar, .btn-limpar {
+    background-color: #7CA067;
+    color: white;
+}
+
+.btn-finalizar:hover, .btn-limpar:hover {
+    background-color: #FEBFBF;
+}
+
+

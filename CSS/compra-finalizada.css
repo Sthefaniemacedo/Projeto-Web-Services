@@ -1,0 +1,150 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF0F5; /* Fundo suave feminino */
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho superior */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FEBFBF;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.info-envio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.frete-gratis {
+  text-align: right;
+}
+
+.icone {
+  width: 16px;
+  height: auto;
+}
+
+/* Logo e menu superior */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.topo h1 {
+  font-family: 'DM Serif Display', serif;
+  color: #7CA067;
+  font-size: 40px;
+  text-align: center;
+  flex: 1;
+}
+
+.link-icone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  gap: 5px;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icones img {
+  width: 20px;
+  height: auto;
+}
+
+.menunav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  padding: 10px 0;
+}
+
+.menunav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.menunav a:hover {
+  color: #FEBFBF;
+}
+
+/* Caixa de sucesso */
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  max-width: 480px;
+  margin: 60px auto;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.container .icone {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.container h1 {
+  color: #7CA067;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.btn-voltar {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #FEBFBF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-voltar:hover {
+  background-color: #a64878;
+  transform: scale(1.05);
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

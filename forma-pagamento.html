@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Forma de Pagamento</title>
+<link rel="stylesheet" href="CSS/forma-pagamento.css" />
+</head>
+<body>
+     <!-- Cabeçalho principal -->
+<header class="cabecalho">
+    <div class="info-envio">
+        <img src="imagens/icon_localizacao.png" alt="Ícone de localização" class="icone">
+        <span>Enviamos para todo o Brasil</span>
+    </div>
+    <div class="frete-gratis">
+        <span>Frete Grátis a partir de R$100 reais.</span>
+    </div>
+</header>
+
+<header class="topo">
+    <h1>De Brubs - Moda Feminina</h1>
+    <div class="icones">
+        <a href="conta.html" class="link-icone">
+            <img src="imagens/icon_conta.png" alt="Ícone de conta">
+            <span>Minha Conta</span>
+        </a>
+    </div>
+    <div id="carrinho">
+        <a href="carrinho.html" class="link-icone">
+            <img src="imagens/icon_carrinho.png" alt="Ícone de carrinho">
+        </a>
+    </div>
+</header>
+<main>
+  <section>
+    <h2>Forma de Pagamento</h2>
+    <label for="forma-pagamento">Escolha a forma de pagamento</label>
+    <select id="forma-pagamento" required>
+      <option value="" disabled selected>Selecione</option>
+      <option value="credito">Cartão de Crédito</option>
+      <option value="debito">Cartão de Débito</option>
+      <option value="pix">Pix</option>
+    </select>
+
+    <div id="cartao-detalhes" class="hidden">
+      <label for="num-cartao">Número do Cartão</label>
+      <input type="text" id="num-cartao" maxlength="19" placeholder="0000 0000 0000 0000" />
+
+      <label for="vencimento">Vencimento</label>
+      <input type="text" id="vencimento" maxlength="5" placeholder="MM/AA" />
+
+      <label for="cvv">CVV</label>
+      <input type="password" id="cvv" maxlength="4" placeholder="123" />
+
+      <label for="parcelas">Parcelamento</label>
+      <select id="parcelas">
+        <option value="1">1x (à vista)</option>
+        <option value="2">2x</option>
+        <option value="3">3x</option>
+        <option value="4">4x</option>
+        <option value="5">5x</option>
+        <option value="6">6x</option>
+      </select>
+    </div>
+
+    <div id="qrcode-container" class="hidden">
+      <p>Use o QR Code abaixo para pagar via Pix:</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=pix-example-code" alt="QR Code Pix" />
+    </div>
+
+    <button id="btn-finalizar">Finalizar Pagamento</button>
+  </section>
+
+  <aside>
+    <h3>Resumo da Compra</h3>
+    <div id="resumo-itens"></div>
+    <div class="resumo-item">Frete: <span id="frete">R$ 15,00</span></div>
+    <div class="resumo-item">Total: <span id="total">R$ 0,00</span></div>
+  </aside>
+</main>
+
+<script src="JS/forma-pagamento.js"></script>
+</body>
+</html>
