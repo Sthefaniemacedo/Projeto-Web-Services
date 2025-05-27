@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style_blusas.css">
 
     <!-- Importação da fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,122 +14,100 @@
 </head>
 <body>
 
-   <!-- Cabeçalho principal -->
+<!-- Cabeçalho principal -->
 <header class="cabecalho">
     <div class="info-envio">
         <img src="imagens/icon_localizacao.png" alt="Ícone de localização" class="icone">
         <span>Enviamos para todo o Brasil</span>
     </div>
-    
     <div class="frete-gratis">
         <span>Frete Grátis a partir de R$100 reais.</span>
     </div>
 </header>
 
-
-    <header class="topo">
-        <h1>De Brubs - Moda Feminina</h1>
-        <div class="icones">
-            <a href="conta.html" class="link-icone">
-                <img src="imagens/icon_conta.png" alt="Ícone de conta">
-                <span>Minha Conta</span>
-
-
-            </a>
-        </div>
-        <div id="carrinho">
-          <a href="carrinho.html" class="link-icone">
+<header class="topo">
+    <h1>De Brubs - Moda Feminina</h1>
+    <div class="icones">
+        <a href="conta.html" class="link-icone">
+            <img src="imagens/icon_conta.png" alt="Ícone de conta">
+            <span>Minha Conta</span>
+        </a>
+    </div>
+    <div id="carrinho">
+        <a href="carrinho.html" class="link-icone">
             <img src="imagens/icon_carrinho.png" alt="Ícone de carrinho">
         </a>
-      </div>
-    </header>
-<!-- Menu de navegação-->
+    </div>
+</header>
+
+<!-- Menu de navegação -->
 <div class="menunav">
-<a href="index.html" class="active">HOME</a>
-<a href="blusas.html" class="active">BLUSAS</a>
+    <a href="index.html" class="active">HOME</a>
+    <a href="blusas.html" class="active">BLUSAS</a>
 </div>
-   
-            <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/blusa.jpg">
-              <img src="imagens/img_produtos/blusa.jpg" alt="Blusa">
-            </a>
-            <div class="desc">Blusa gola alta</div>
-            <p class="valor_item">R$45,00</p>
-            <button>Adicionar carrinho</button>
-          </div>
-        </div>
 
-        <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/body.jpg">
-              <img src="imagens/img_produtos/body.jpg" alt="Body">
-            </a>
-            <div class="desc">Body</div>
-            <p class="valor_item">R$45,00</p>
-            <button>Adicionar carrinho</button>
-          </div>
-        </div>
+<!-- Produtos -->
+<div class="gallery">
+    <img src="imagens/img_produtos/blusa.jpg" alt="Blusa">
+    <div class="desc">Blusa gola alta</div>
+    <p class="valor_item">R$45,00</p>
+    <button onclick="adicionarAoCarrinho('Blusa gola alta', 45.00, 'imagens/img_produtos/blusa.jpg')">Adicionar ao Carrinho</button>
+</div>
 
-        <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/body_oncinha.jpg">
-              <img src="imagens/img_produtos/body_oncinha.jpg" alt="Body oncinha">
-            </a>
-            <div class="desc">Body oncinha</div>
-            <p class="valor_item">R$45,00</p>
-            <button>Adicionar carrinho</button>
-          </div>
-        </div>
-        
-        <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/btop.jpg">
-              <img src="imagens/img_produtos/top.jpg" alt="Top">
-            </a>
-            <div class="desc">Top</div>
-            <p class="valor_item">R$30,00</p>
-            <button>Adicionar carrinho</button>
-          </div>
-        </div>
+<div class="gallery">
+    <img src="imagens/img_produtos/body.jpg" alt="Body">
+    <div class="desc">Body</div>
+    <p class="valor_item">R$45,00</p>
+    <button onclick="adicionarAoCarrinho('Body', 45.00, 'imagens/img_produtos/body.jpg')">Adicionar ao Carrinho</button>
+</div>
 
-        <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/top_gola.jpg">
-              <img src="imagens/img_produtos/top_gola.jpg" alt="Top Gola Alta">
-            </a>
-            <div class="desc">Top Gola Alta</div>
-            <p class="valor_item">R$25,00</p>
-            <button>Adicionar carrinho</button>
-          </div>
-        </div>
-        <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/top_sem_alca.jpg">
-              <img src="imagens/img_produtos/top_sem_alca.jpg" alt="Top sem alca">
-            </a>
-            <div class="desc">Top sem alça de couro</div>
-            <p class="valor_item">R$55,00</p>
-            <button>Adicionar carrinho</button>
-          </div>
-        </div>
-        <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/top_sem_alca2.jpg">
-              <img src="imagens/img_produtos/top_sem_alca2.jpg" alt="Top sem alca">
-            </a>
-            <div class="desc">Top sem alça de couro</div>
-            <p class="valor_item">R$55,00</p>
-            <button>Adicionar carrinho</button>
-          </div>
-        </div>
-        <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/top_uma_manga.jpg">
-              <img src="imagens/img_produtos/top_uma_manga.jpg" alt="Top uma manga">
-            </a>
-            <div class="desc">Top uma manga</div>
-            <p class="valor_item">R$40,00</p>
-            <button>Adicionar carrinho</button>
-          </div>
-        </div>
+<div class="gallery">
+    <img src="imagens/img_produtos/body_oncinha.jpg" alt="Body oncinha">
+    <div class="desc">Body oncinha</div>
+    <p class="valor_item">R$45,00</p>
+    <button onclick="adicionarAoCarrinho('Body oncinha', 45.00, 'imagens/img_produtos/body_oncinha.jpg')">Adicionar ao Carrinho</button>
+</div>
 
-    <footer>
-        &copy; 2025 DeBrubs.com.br. Todos os direitos reservados.
+<div class="gallery">
+    <img src="imagens/img_produtos/top.jpg" alt="Top">
+    <div class="desc">Top</div>
+    <p class="valor_item">R$30,00</p>
+    <button onclick="adicionarAoCarrinho('Top', 30.00, 'imagens/img_produtos/top.jpg')">Adicionar ao Carrinho</button>
+</div>
 
-    </footer>
+<div class="gallery">
+    <img src="imagens/img_produtos/top_gola.jpg" alt="Top Gola Alta">
+    <div class="desc">Top Gola Alta</div>
+    <p class="valor_item">R$25,00</p>
+    <button onclick="adicionarAoCarrinho('Top Gola Alta', 25.00, 'imagens/img_produtos/top_gola.jpg')">Adicionar ao Carrinho</button>
+</div>
+
+<div class="gallery">
+    <img src="imagens/img_produtos/top_sem_alca.jpg" alt="Top sem alça">
+    <div class="desc">Top sem alça de couro</div>
+    <p class="valor_item">R$55,00</p>
+    <button onclick="adicionarAoCarrinho('Top sem alça de couro', 55.00, 'imagens/img_produtos/top_sem_alca.jpg')">Adicionar ao Carrinho</button>
+</div>
+
+<div class="gallery">
+    <img src="imagens/img_produtos/top_sem_alca2.jpg" alt="Top sem alça 2">
+    <div class="desc">Top sem alça de couro</div>
+    <p class="valor_item">R$55,00</p>
+    <button onclick="adicionarAoCarrinho('Top sem alça de couro', 55.00, 'imagens/img_produtos/top_sem_alca2.jpg')">Adicionar ao Carrinho</button>
+</div>
+
+<div class="gallery">
+    <img src="imagens/img_produtos/top_uma_manga.jpg" alt="Top uma manga">
+    <div class="desc">Top uma manga</div>
+    <p class="valor_item">R$40,00</p>
+    <button onclick="adicionarAoCarrinho('Top uma manga', 40.00, 'imagens/img_produtos/top_uma_manga.jpg')">Adicionar ao Carrinho</button>
+</div>
+
+<footer>
+    &copy; 2025 DeBrubs.com.br. Todos os direitos reservados.
+</footer>
+
+<script src="JS/carrinho.js"></script>
 
 </body>
 </html>
