@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/minha-conta.css">
+
+    <!-- Importação da fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <title>De Brubs - Moda Feminina</title>
+</head>
+<body>
+
+<!-- Cabeçalho principal -->
+<header class="cabecalho">
+    <div class="info-envio">
+        <img src="imagens/icon_localizacao.png" alt="Ícone de localização" class="icone">
+        <span>Enviamos para todo o Brasil</span>
+    </div>
+
+
+
+    <div class="frete-gratis">
+        <span>Frete Grátis a partir de R$100 reais.</span>
+    </div>
+</header>
+
+<header class="topo">
+    <h1>De Brubs - Moda Feminina</h1>
+    <div class="icones">
+        <a href="conta.html" class="link-icone">
+            <img src="imagens/icon_conta.png" alt="Ícone de conta">
+            <span>Minha Conta</span>
+        </a>
+    </div>
+    <div id="carrinho">
+        <a href="carrinho.html" class="link-icone">
+            <img src="imagens/icon_carrinho.png" alt="Ícone de carrinho">
+        </a>
+    </div>
+</header>
+
+<!-- Menu de navegação -->
+<div class="menunav">
+    <a href="index.html" class="active">HOME</a>
+    <a href="blusas.html" class="active">BLUSAS</a>
+</div>
+
+<div class="d-flex">
+<div class="menu-lateral" style="width: 250px">
+    <div class="d-flex flex-column vh-100 p-3 bg-light" style="width: 250px;">
+        <h5 class="mb-4">Minha Conta</h5>
+      
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link d-flex align-items-center text-dark" data-pagina="pedidos.html">
+              <img src="imagens/checkout.png" alt="Ícone Home" class="me-2 menu-icon" />
+              <span>Pedidos</span>
+            </a>
+          </li>
+      
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link d-flex align-items-center text-dark" data-pagina="endereco.html">
+              <img src="imagens/endereco.png" alt="Ícone Configurações" class="me-2 menu-icon" />
+              <span>Endereço</span>
+            </a>
+          </li>
+      
+          <li class="nav-item">
+            <a href="#" class="nav-link d-flex align-items-center text-dark" data-pagina="detalhes-conta.html">
+              <img src="imagens/user.png" alt="Ícone Sobre" class="me-2 menu-icon" />
+              <span>Detalhes da Conta</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="conta.html" class="nav-link d-flex align-items-center text-dark">
+              <img src="imagens/logout.png" alt="Ícone Sobre" class="me-2 menu-icon" />
+              <span>Sair</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      
+      <!-- Conteúdo dinâmico -->
+      <div id="conteudo" class="flex-grow p-4">
+
+      </div>
+    </div>
+
+
+    <footer>
+        <!-- Informações de rodapé, links, etc. -->
+    </footer>
+    <script type="module" src="script/minhaConta.js"></script>
+
+</body>
+</html>

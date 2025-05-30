@@ -1,0 +1,95 @@
+<style>
+    .detalhes-conta {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px 24px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+  
+    .detalhes-conta h2,
+    .detalhes-conta p {
+      grid-column: 1 / -1;
+    }
+  
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    label {
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+  
+    input {
+      padding: 6px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    button {
+      background-color: black;
+      cursor: pointer;
+      color: white;
+      border: none;
+      padding: 4px 10px;
+    }
+  
+    button:hover {
+      background-color: #7CA067;
+    }
+  
+    .button-group {
+      grid-column: 1 / 2;
+      justify-content: flex-start;
+      display: flex;
+    }
+  
+    @media (max-width: 800px) {
+      .detalhes-conta {
+        grid-template-columns: 1fr;
+      }
+  
+      .button-group {
+        grid-column: 1 / 2;
+      }
+    }
+  
+    @media (min-width: 801px) {
+      .button-group {
+        grid-row: 5;
+      }
+    }
+  </style>
+  
+  <form class="detalhes-conta">
+    <h2>Detalhes da Conta</h2>
+    <p>* Indica campo obrigatório</p>
+  
+    <div class="form-group">
+      <label for="nome">Nome *</label>
+      <input type="text" id="nome" name="nome" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="sobrenome">Sobrenome *</label>
+      <input type="text" id="sobrenome" name="sobrenome" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="telefone">Número de Telefone *</label>
+      <input type="tel" id="telefone" name="telefone" required pattern="[0-9\s()+-]{10,}" placeholder="(99) 99999-9999">
+    </div>
+  
+    <div class="form-group">
+      <label for="cpf">CPF *</label>
+      <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+    </div>
+  
+    <div class="form-group button-group">
+      <button type="submit">Salvar</button>
+    </div>
+  </form>

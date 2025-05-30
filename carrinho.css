@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E1F0DA;
+}
+
+.icone{
+    width: 20px;
+    height: auto;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    background-color: #FEBFBF;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.info-envio{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+h1{
+    font-family: 'Dm Serif Display', serif;
+    color: #7CA067;
+    font-size: 50px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.icones{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-icone{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    gap: 5px;
+}
+
+.link-icone img{
+    width: 24px;
+    height: auto;
+}
+
+.menunav{
+    text-align: center;
+}
+
+.menunav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 14px 16px;
+    color: black;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 48px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 80px);
+    height: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+}
+
+.carrinho{
+    flex: 00 60%;
+    
+}
+
+.resumo{
+    flex: 0 0 40%;
+    background-color: #D9D9D9;
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+}
+
+.label-carrinho{
+    font-family: 'Dm Serif Display', serif;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 40px;
+
+
+
+
+}
+
+.label-resumo{
+    font-family: 'Dm Serif Display', serif;
+    color: #565656;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 40px;
+
+
+}
+
+.linha-separadora-top{
+    height: 1px;
+    width: calc(100% - 60px);
+    background-color: #929292;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+/*ajeitar isso daqui ela tem que ficar 
+na parte de baixo do card*/
+.linha-separadora-bottom{
+    height: 1px;
+    width: calc(100% - 60px);
+    background-color: #929292;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 20px;
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Importação da fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,38 +14,35 @@
 </head>
 <body>
 
-   <!-- Cabeçalho principal -->
-<header class="cabecalho">
-    <div class="info-envio">
-        <img src="imagens/icon_localizacao.png" alt="Ícone de localização" class="icone">
-        <span>Enviamos para todo o Brasil</span>
-    </div>
-    
-    <div class="frete-gratis">
-        <span>Frete Grátis a partir de R$100 reais.</span>
-    </div>
-</header>
-
+    <!-- Cabeçalho principal -->
+    <header class="cabecalho">
+        <div class="info-envio">
+            <img src="imagens/icon_localizacao.png" alt="Ícone de localização" class="icone">
+            <p>Enviamos para todo o Brasil</p>
+        </div>
+        <p class="frete-gratis">Frete Grátis a partir de R$100 reais.</p>
+    </header>
 
     <header class="topo">
         <h1>De Brubs - Moda Feminina</h1>
         <div class="icones">
-            <a href="minha-conta.html" class="link-icone">
+            <a href="#" class="link-icone">
                 <img src="imagens/icon_conta.png" alt="Ícone de conta">
                 <span>Minha Conta</span>
-
-
             </a>
-            <a href="carrinho.html" class="link-icone">
+            <a href="#" class="link-icone">
                 <img src="imagens/icon_carrinho.png" alt="Ícone de carrinho">
             </a>
         </div>
     </header>
 <!-- Menu de navegação-->
 <div class="menunav">
-<a href="index.html" class="active">HOME</a>
-<a href="blusas.html" class="active">BLUSAS</a>
+<a href="#home" class="active">HOME</a>
+<a href="#blusas" class="active">BLUSAS</a>
+<a href="#calcas" class="active">CALÇAS</a>
+<a href="#Vestidos" class="active">VESTIDOS</a>
 </div>
+</li>
     <!-- Imagem de capa -->
     <img class="banner" src="imagens/img_capa.png" alt="Imagem de capa">
 
@@ -68,14 +65,14 @@
     </div>
     <!-- Itens favoritos na tela inicial -->
         <h2 class="favoritos">Favoritos</h2>        
-            <div class="gallery">
+          <div class="gallery">
             <a target="_blank" href="imagens/img_produtos/blusa.jpg">
               <img src="imagens/img_produtos/blusa.jpg" alt="Blusa">
             </a>
             <div class="desc">Blusa gola alta</div>
             <p class="valor_item">R$45,00</p>
-            <button onclick="adicionarAoCarrinho('Nome do Produto', 45.00)">Adicionar ao Carrinho</button>
-        </div>
+            <button>Adicionar carrinho</button>
+          </div>
         </div>
 
         <div class="gallery">
@@ -84,8 +81,8 @@
             </a>
             <div class="desc">Body</div>
             <p class="valor_item">R$45,00</p>
-            <button onclick="adicionarAoCarrinho('Nome do Produto', 45.00)">Adicionar ao Carrinho</button>
-        </div>
+            <button>Adicionar carrinho</button>
+          </div>
         </div>
 
         <div class="gallery">
@@ -94,28 +91,15 @@
             </a>
             <div class="desc">Body oncinha</div>
             <p class="valor_item">R$45,00</p>
-            <button onclick="adicionarAoCarrinho('Nome do Produto', 45.00)">Adicionar ao Carrinho</button>
-        </div>
+            <button>Adicionar carrinho</button>
+          </div>
         </div>
         
-        <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/btop.jpg">
-              <img src="imagens/img_produtos/top.jpg" alt="Top">
-            </a>
-            <div class="desc">Top</div>
-            <p class="valor_item">R$30,00</p>
-            <button onclick="adicionarAoCarrinho('Nome do Produto', 30.00)">Adicionar ao Carrinho</button>
-        </div>
-        </div>
-
-
+    
     <footer>
         &copy; 2025 DeBrubs.com.br. Todos os direitos reservados.
 
     </footer>
-<script src="JS/carrinho.js"></script>
-
 
 </body>
 </html>
-

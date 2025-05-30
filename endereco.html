@@ -1,0 +1,112 @@
+<style>
+    .cadastro-endereco{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 16px 24px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .cadastro-endereco h2,
+    .cadastro-endereco p{
+        grid-column: 1 / -1;
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    label{
+        margin-bottom: 6px;
+        font-weight: 600;
+    }
+
+    input{
+        padding: 6px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button{
+        background-color: black;
+        cursor: pointer;
+        color: white;
+        border: none;
+        padding: 4px 10px;
+    }
+
+    button:hover{
+        background-color: #7CA067;
+    }
+
+    .button-group {
+    grid-column: 1 / 2;  
+    justify-content: flex-start;
+    display: flex;
+    }
+
+    /* Media query para telas menores */
+@media (max-width: 800px) {
+  .cadastro-endereco {
+    grid-template-columns: 1fr; /* layout com 1 coluna */
+  }
+
+  .button-group {
+    grid-column: 1 / 2; /* botão ocupa a coluna única */
+  }
+}
+
+    
+
+  
+    
+
+</style>
+
+<form class="cadastro-endereco">
+  <h2>Endereço</h2>
+  <p>* Indica campo obrigatório</p>
+
+  <div class="form-group">
+    <label for="nome">Nome *</label>
+    <input type="text" id="nome" name="nome" required>
+  </div>
+
+  <div class="form-group">
+    <label for="sobrenome">Sobrenome *</label>
+    <input type="text" id="sobrenome" name="sobrenome" required>
+  </div>
+
+  <div class="form-group">
+    <label for="endereco">Endereço *</label>
+    <input type="text" id="endereco" name="endereco" required>
+  </div>
+
+  <div class="form-group">
+    <label for="cep">CEP *</label>
+    <input type="text" id="cep" name="cep" required>
+  </div>
+
+  <div class="form-group">
+    <label for="cidade">Cidade *</label>
+    <input type="text" id="cidade" name="cidade" required>
+  </div>
+
+  <div class="form-group">
+    <label for="estado">Estado *</label>
+    <input type="text" id="estado" name="estado" required>
+  </div>
+
+  <div class="form-group">
+    <label for="complemento">Complemento</label>
+    <input type="text" id="complemento" name="complemento">
+  </div>
+
+  <div class="form-group button-group">
+    <button type="submit">Salvar</button>
+  </div>
+
+</form>
