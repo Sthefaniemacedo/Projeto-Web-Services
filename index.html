@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,26 @@
     <!-- Importação da fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <title>De Brubs</title>
 </head>
+
 <body>
 
-   <!-- Cabeçalho principal -->
-<header class="cabecalho">
-    <div class="info-envio">
-        <img src="imagens/icon_localizacao.png" alt="Ícone de localização" class="icone">
-        <span>Enviamos para todo o Brasil</span>
-    </div>
-    
-    <div class="frete-gratis">
-        <span>Frete Grátis a partir de R$100 reais.</span>
-    </div>
-</header>
+    <!-- Cabeçalho principal -->
+    <header class="cabecalho">
+        <div class="info-envio">
+            <img src="imagens/icon_localizacao.png" alt="Ícone de localização" class="icone">
+            <span>Enviamos para todo o Brasil</span>
+        </div>
+
+        <div class="frete-gratis">
+            <span>Frete Grátis a partir de R$100 reais.</span>
+        </div>
+    </header>
 
 
     <header class="topo">
@@ -41,11 +45,11 @@
             </a>
         </div>
     </header>
-<!-- Menu de navegação-->
-<div class="menunav">
-<a href="index.html" class="active">HOME</a>
-<a href="blusas.html" class="active">BLUSAS</a>
-</div>
+    <!-- Menu de navegação-->
+    <div class="menunav">
+        <a href="index.html" class="active">HOME</a>
+        <a href="blusas.html" class="active">ROUPAS</a>
+    </div>
     <!-- Imagem de capa -->
     <img class="banner" src="imagens/img_capa.png" alt="Imagem de capa">
 
@@ -67,55 +71,66 @@
         </div>
     </div>
     <!-- Itens favoritos na tela inicial -->
-        <h2 class="favoritos">Favoritos</h2>        
-            <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/blusa.jpg">
-              <img src="imagens/img_produtos/blusa.jpg" alt="Blusa">
-            </a>
-            <div class="desc">Blusa gola alta</div>
-            <p class="valor_item">R$45,00</p>
-            <button onclick="adicionarAoCarrinho('Nome do Produto', 45.00)">Adicionar ao Carrinho</button>
+    <h2 class="favoritos">Favoritos</h2>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="gallery-content">
+                <a target="_blank" href="imagens/women-dress-6.png">
+                    <img src="imagens/women-dress-6.png" alt="Blusa">
+                </a>
+                <div class="desc">Vestido rosa</div>
+                <p class="valor_item">R$55,00</p>
+            </div>
+            <button onclick="adicionarAoCarrinho('Vestido rosa', 55.00, 'imagens/women-dress-6.png')">Adicionar ao Carrinho</button>
         </div>
+
+
+        <div class="gallery">
+            <div class="gallery-content">
+                <a target="_blank" href="imagens/women-dress-4.png">
+                    <img src="imagens/women-dress-4.png" alt="Body">
+                </a>
+                <div class="desc">Body preto</div>
+                <p class="valor_item">R$30,00</p>
+            </div>
+            <button onclick="adicionarAoCarrinho('Body preto', 30.00, 'imagens/women-dress-4.png')">Adicionar ao Carrinho</button>
         </div>
 
         <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/body.jpg">
-              <img src="imagens/img_produtos/body.jpg" alt="Body">
-            </a>
-            <div class="desc">Body</div>
-            <p class="valor_item">R$45,00</p>
-            <button onclick="adicionarAoCarrinho('Nome do Produto', 45.00)">Adicionar ao Carrinho</button>
-        </div>
+            <div class="gallery-content">
+                <a target="_blank" href="imagens/sweater-marrom.png">
+                    <img src="imagens/sweater-marrom.png" alt="Body oncinha">
+                </a>
+                <div class="desc">Sweater marrom</div>
+                <p class="valor_item">R$45,00</p>
+            </div>
+            <button onclick="adicionarAoCarrinho('Sweater marrom', 45.00, 'imagens/sweater-marrom.png')">Adicionar ao Carrinho</button>
         </div>
 
+
+
+
+
         <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/body_oncinha.jpg">
-              <img src="imagens/img_produtos/body_oncinha.jpg" alt="Body oncinha">
-            </a>
-            <div class="desc">Body oncinha</div>
-            <p class="valor_item">R$45,00</p>
-            <button onclick="adicionarAoCarrinho('Nome do Produto', 45.00)">Adicionar ao Carrinho</button>
+            <div class="gallery-content">
+                <a target="_blank" href="imagens/women_dress.png">
+                    <img src="imagens/women_dress.png" alt="sweater">
+                </a>
+                <div class="desc">Vestido azul</div>
+                <p class="valor_item">R$99,00</p>
+            </div>
+            <button onclick="adicionarAoCarrinho('Vestido azul', 99.00, 'imagens/women_dress.png')">Adicionar ao Carrinho</button>
         </div>
-        </div>
-        
-        <div class="gallery">
-            <a target="_blank" href="imagens/img_produtos/btop.jpg">
-              <img src="imagens/img_produtos/top.jpg" alt="Top">
-            </a>
-            <div class="desc">Top</div>
-            <p class="valor_item">R$30,00</p>
-            <button onclick="adicionarAoCarrinho('Nome do Produto', 30.00)">Adicionar ao Carrinho</button>
-        </div>
-        </div>
+    </div>
 
 
     <footer>
         &copy; 2025 DeBrubs.com.br. Todos os direitos reservados.
 
     </footer>
-<script src="JS/carrinho.js"></script>
+    <script src="JS/carrinho.js"></script>
 
 
 </body>
-</html>
 
+</html>

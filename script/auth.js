@@ -1,5 +1,4 @@
-import {login, createUser} from './services/authService.js'
-import { handleError, handleSuccess } from './services/responseHandlers.js';
+import {login, createUser} from './services/authService.js';
 
 /*
 document.querySelector('login-section')
@@ -33,10 +32,53 @@ handleFormSubmit(
         }
 
         createUser(nome, email, senha, "")
-        .then(handleSuccess)
-        .catch(handleError);
+        .then((response) =>
+            {
+                console.log('Resposta do servidor: ', response.data);
+
+
+    if(response.status === 200){
+        alert('Cadastro realizado com sucesso');
+        window.location.href = 'index.html';
+    }else{
+        alert('Algo deu errado no cadastro.');
     }
-)
+            }
+        )
+        .catch((error) =>
+            {    console.error('Erro: ', error);
+        }
+        );
+    },
+
+    
+);
+
+handleFormSubmit(
+    '.login-section', function(event){
+        const email = document.getElementById('email').value;
+        const senha = document.getElementById('senha').value;
+
+        login(email, senha)
+        .then((response) =>
+            {
+                console.log('Resposta do servidor: ', response.data);
+
+
+    if(response.status === 200){
+        alert('Login realizado com sucesso');
+        window.location.href = 'index.html';
+    }else{
+        alert('Algo deu errado no login.');
+    }
+            }
+        )
+        .catch((error) =>
+            {    console.error('Erro: ', error);
+        }
+        );
+    }
+);
 
 document.querySelector('.toggle-password')
 .addEventListener('click', function(){

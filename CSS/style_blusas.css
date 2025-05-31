@@ -100,6 +100,13 @@
         
             /* Estilização da galeria de blusas */
 
+            .gallery-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 10px;
+            }
+
             div.gallery {
                 border: 1px solid #ccc;
               }
@@ -146,12 +153,13 @@
                 clear: both;
               }
               .gallery {
+                display: flex;
+                flex-direction: column;
                 border: 1px solid #ccc;
-                display: inline-block;
                 width: 20%;
                 margin: 0 10px; /* Adiciona 10px de margem à esquerda e à direita */
-                vertical-align: top;
-              }
+                box-sizing: border-box;
+            }
 
               .gallery button {
                 background-color: #7CA067;
@@ -161,6 +169,7 @@
                 cursor: pointer;
                 transition: 0.3s;
                 border-radius: 5px;
+                margin-top: auto;
               }
 
               .gallery button:hover {
@@ -180,6 +189,10 @@
                 .des{
                     font-family: 'Poppins', sans-serif;
 
+                }
+
+                .gallery-content{
+                    flex-grow: 1;
                 }
                 div.gallery button {
                     display: block;
@@ -250,6 +263,7 @@
     font-weight: bold;
     color: #333;
     margin-top: 20px;
+    margin-right: 20px;
     text-align: right;
 }
 
