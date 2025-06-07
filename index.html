@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
 
+
     <!-- Importação da fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,54 +74,7 @@
     <!-- Itens favoritos na tela inicial -->
     <h2 class="favoritos">Favoritos</h2>
     <div class="gallery-container">
-        <div class="gallery">
-            <div class="gallery-content">
-                <a target="_blank" href="imagens/women-dress-6.png">
-                    <img src="imagens/women-dress-6.png" alt="Blusa">
-                </a>
-                <div class="desc">Vestido rosa</div>
-                <p class="valor_item">R$55,00</p>
-            </div>
-            <button onclick="adicionarAoCarrinho('Vestido rosa', 55.00, 'imagens/women-dress-6.png')">Adicionar ao Carrinho</button>
-        </div>
-
-
-        <div class="gallery">
-            <div class="gallery-content">
-                <a target="_blank" href="imagens/women-dress-4.png">
-                    <img src="imagens/women-dress-4.png" alt="Body">
-                </a>
-                <div class="desc">Body preto</div>
-                <p class="valor_item">R$30,00</p>
-            </div>
-            <button onclick="adicionarAoCarrinho('Body preto', 30.00, 'imagens/women-dress-4.png')">Adicionar ao Carrinho</button>
-        </div>
-
-        <div class="gallery">
-            <div class="gallery-content">
-                <a target="_blank" href="imagens/sweater-marrom.png">
-                    <img src="imagens/sweater-marrom.png" alt="Body oncinha">
-                </a>
-                <div class="desc">Sweater marrom</div>
-                <p class="valor_item">R$45,00</p>
-            </div>
-            <button onclick="adicionarAoCarrinho('Sweater marrom', 45.00, 'imagens/sweater-marrom.png')">Adicionar ao Carrinho</button>
-        </div>
-
-
-
-
-
-        <div class="gallery">
-            <div class="gallery-content">
-                <a target="_blank" href="imagens/women_dress.png">
-                    <img src="imagens/women_dress.png" alt="sweater">
-                </a>
-                <div class="desc">Vestido azul</div>
-                <p class="valor_item">R$99,00</p>
-            </div>
-            <button onclick="adicionarAoCarrinho('Vestido azul', 99.00, 'imagens/women_dress.png')">Adicionar ao Carrinho</button>
-        </div>
+       <!-- Produtos carregados dinamicamente -->
     </div>
 
 
@@ -128,6 +82,8 @@
         &copy; 2025 DeBrubs.com.br. Todos os direitos reservados.
 
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="JS/carrinho.js"></script>
 
 
